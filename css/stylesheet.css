@@ -9,13 +9,46 @@
   box-sizing: border-box;
 }
 
-.row,
+.row {
+  width: 100%;
+}
+
 .flex-box {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
+}
+
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline;
+  padding-left: 4em;
+}
+
+.first-nav-item {
+  padding-left: 0;
+}
+
+.last-nav-item {
+  padding-right: 1em;
+}
+
+.top-nav {
+  text-align: right;
 }
 
 .banner-img {
