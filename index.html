@@ -2,45 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><Solosax/title>
+    <title>Solosax</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--Links to the stylesheet-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
     <style type="text/css">
+      /* latin */
       @font-face {
-        font-family: "Comfortaa";
-        src: url("https://fonts.googleapis.com/css?family=Comfortaa:400,300,700");
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Comfortaa Light'), local('Comfortaa-Light'), url(https://fonts.gstatic.com/s/comfortaa/v7/r_tUZNl0G8xCoOmp_JkSChampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Comfortaa'), local('Comfortaa-Regular'), url(https://fonts.gstatic.com/s/comfortaa/v7/wz1gqe57Mbg11v-OrLlVjoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Comfortaa';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Comfortaa Bold'), local('Comfortaa-Bold'), url(https://fonts.gstatic.com/s/comfortaa/v7/fND5XPYKrF2tQDwwfWZJIxampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
       }
       body {
         font-family: Comfortaa;
       }
     </style>
-    <!--Links to the stylesheet-->
-    <link rel="stylesheet" href="css/stylesheet.css">
+
     <!--Links to the favicon represented in the tab-->
     <link rel="shortcut icon" href="img/favicon-32x32.ico">
     <!--Sets the screen width-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
 	<!--Links to the javascript file-->
     <script src=""></script>
   </head>
   <body>
-  	<div class="container">
-      <nav class="top-nav">
-          <ul>
-              <li class="nav-item first-nav-item "><a href="#"></a>Home</li><!--
-           --><li class="nav-item"><a href="#"></a>About</li><!--
-           --><li class="nav-item"><a href="#"></a>Music</li><!--
-           --><li class="nav-item last-nav-item"><a href="#"></a>Contact</li>
+  	<div class="container-fluid">
+      <nav class="top-nav" >
+          <ul class="nav-list">
+              <li class="nav-item first-nav-item "><a href="#"></a>Home</li>
+             <li class="nav-item"><a href="#"></a>About</li>
+             <li class="nav-item"><a href="#"></a>Music</li>
+             <li class="nav-item last-nav-item"><a href="#"></a>Contact</li>
           </ul>
       </nav>
   		<header class="row banner-wrapper flex-box">
         <figure class="">
-			   <img class="responsive-img banner-img" src="img/banner-image-cropped.jpg">
+			   <img class="banner-img responsive-img " src="img/banner-image-cropped.jpg">
         </figure>
 			</header>
-      <main>
-        <div class=>
-          Put text in here
+      <main class="row">
+        <div class="content">
+          The perfect wedding musician creates the perfect wedding day, so you need an experienced, professional musician, who knows how to set exactly the right tone. Andrew Taylor, a saxophone musician based in the North East, specialises in performing personalised beautiful wedding music to create the perfect ambience.The wedding musician that played at Princess Diana's wedding, can play at yours! Andrew can include any or all of the following elements:
+            <ol>
+                <li>The Wedding Ceremony, (including special song for Brides entrance).</li>
+                <li>During the Reception Drinks and Photographs.</li>
+                <li>Throughout the Wedding Breakfast.</li>
+            </ol>
         </div>
       </main>
+      <footer class="row">
+      Put contact details here
+      </footer>
   	</div>
   </body>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </html>
