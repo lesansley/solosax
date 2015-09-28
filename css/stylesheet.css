@@ -9,8 +9,13 @@
   box-sizing: border-box;
 }
 
-.row {
-
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Playfair Display SC Black'), local('PlayfairDisplaySC-Black'), url(https://fonts.gstatic.com/s/playfairdisplaysc/v5/5ggqGkvWJU_TtW2W8cEubPV7XtwIpdJu575xxDdcaAN_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 
 .flex-box {
@@ -29,45 +34,67 @@ figure {
   margin: 0;
 }
 
+header {
+  position: center;
+  height: 600px;
+  text-align: -webkit-center;
+  line-height: 600px;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: -webkit-center;
+  font-size: 10vw;
+  color: rgba(256,256,256,0.6);
+  font-weight: 900;
+  font-family: 'Playfair Display SC Black';;
+}
+
+main {
+  will-change: transform;
 }
 
 .container {
   background-color: white;
 }
 
+.top-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;;
+  text-align: right;
+  height: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  position: fixed;
+  z-index: 999  ;
+}
+
 .nav-list {
   font-size: larger;
-  color: white;
 }
 
 .nav-item {
+  color: black;
   display: inline;
   padding-left: 4em;
+  background-color: rgba(256, 256, 256, 0.2);
+  §
 }
-
 .first-nav-item {
   padding-left: 0;
 }
 
 .last-nav-item {
   padding-right: 1em;
-}
-
-.top-nav {
-  padding-top: 10px;
-  padding-bottom: 10px;;
-  text-align: right;
-  height: 40px;
-  top: 0;
-  left: 0;
-  background-color: white;
-  opacity: 1.0;
-  width: 100%;
-  text-align: right;
-  box-shadow: 0px 5px 10px #fff;
 }
 
 .content {
@@ -84,61 +111,12 @@ nav ul {
 	width: 100%;
   background-size: 100%;
 	background-repeat: false;
-  position: center;
+  position: fixed;
+  z-index: -999;
 }
 
 .banner-wrapper {
   z-index: -1;
-}
-
-.responsive-img {
-  width: 100%;
-}
-
-.col-1 {
-  width: 8.3333%;
-}
-
-.col-2 {
-  width: 16.6666%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.3333%;
-}
-
-.col-5 {
-  width: 41.6666%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.3333%;
-}
-
-.col-8 {
-  width: 66.6666%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.3333%;
-}
-
-.col-11 {
-  width: 91.6666%;
-}
-
-.col-12 {
-  width: 100%;
+  top: 0;
+  left: 0;
 }
