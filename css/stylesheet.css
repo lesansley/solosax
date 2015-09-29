@@ -78,14 +78,14 @@ main {
 
 .top-nav > * {
   vertical-align: middle;
-} 
+}
 
 .nav-list {
-  
+
 }
 
 .nav-item {
-  
+
   font-weight: 400;
   font-size: larger;
 }
@@ -101,7 +101,7 @@ main {
 }
 
 .logo-img {
-  max-height: 100px; 
+  max-height: 100px;
   visibility: hidden;
 }
 
@@ -125,11 +125,11 @@ main {
 
 .banner-wrapper > * {
   vertical-align: middle;
-} 
+}
 
 /* Large desktop */
 @media only screen and (max-width: 1200px) {
-  
+
 }
 
 /* Desktop */
@@ -142,6 +142,10 @@ main {
   .content {
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  main {
+    padding-top: 100px;
   }
 
   .title-wrapper {

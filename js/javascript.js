@@ -24,13 +24,23 @@ function setBannerHeight() {
   }
 }
 
+function setNavBar(nav, logo) {
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    var $main = $('main');
+    nav.css('background-color', 'rgb(236,170,57)');
+    nav.css('box-shadow', '0px 2px 5px black');
+    nav.css('color', 'white');
+    logo.css('visibility', 'visible');
+    $main.css('padding-top', '100px');
+  }
+}
+
 function setNavStyle() {
-var scroll = $( window ).scrollTop();
+  var scroll = $( window ).scrollTop();
   var $nav = $('.top-nav');
   var $logo = $('.logo-img')
 
-  console.log(window.matchMedia('(max-width: 769px)').matches);
-  if (!window.matchMedia('(max-width: 769px)').matches) {
+  if (!window.matchMedia('(max-width: 768px)').matches) {
     if(scroll != 0) {
         $nav.css('background-color', 'rgb(236,170,57)');
         $nav.css('box-shadow', '0px 2px 5px black');
@@ -44,15 +54,23 @@ var scroll = $( window ).scrollTop();
         $logo.css('visibility', 'hidden');
     }
   }
+  else {
+    console.log('Call setNavBar');
+    setNavBar($nav, $logo);
+  }
 }
 
 $(function() {
   $('[data-scroll-speed]').moveIt();
   $( window ).resize(function() {
     setBannerHeight();
+    setNavStyle();
   });
-
   $( window ).on('scroll', function() {
     setNavStyle();
   })
 });
+
+$( document).ready(function() {
+  console.log('loaded');
+})
