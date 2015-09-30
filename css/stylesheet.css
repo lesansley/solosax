@@ -1,6 +1,6 @@
-* {
+/* {
   border: 1px solid red !important;
-}
+}*/
 
 * {
   -webkit-box-sizing: border-box;
@@ -31,7 +31,6 @@ figure {
 }
 
 header {
-  position: center;
   height: 600px;
   text-align: -webkit-center;
   line-height: 600px;
@@ -44,7 +43,6 @@ nav ul {
 
 span {
   display: inline-block;
-  vertical-align: middle;
   line-height: normal;
   text-align: -webkit-center;
   font-size: 13vw;
@@ -80,24 +78,42 @@ main {
   vertical-align: middle;
 }
 
-.nav-list {
-
-}
-
 .nav-item {
-
   font-weight: 400;
   font-size: larger;
 }
 
 .content {
-  font-size: larger;
+  font-size: 1.8em;
   text-align: center;
-  padding-top: 40px;;
   line-height: 2em;
   padding-left: 15%;
   padding-right: 15%;
   background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-1 {
+  padding-top: 40px;
+}
+
+.section-2 {
+  background-color: #6939ec;
+}
+
+.section-4 {
+  background-color: #e239aa;
+}
+
+.section-6 {
+  background-color: #aae239;
+}
+
+.quote {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 3vw;
 }
 
 .logo-img {
@@ -123,8 +139,43 @@ main {
   left: 0;
 }
 
-.banner-wrapper > * {
+.title-wrapper {
+  text-align: center;
+}
+
+.title-wrapper > * {
   vertical-align: middle;
+}
+
+blockquote {
+  padding: 0 1em 0 1em;
+  position:relative;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  border-left: 0;
+  margin: 0;
+  color: white;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 2.0em;
+  position:absolute;
+  left: 3px;
+  top: 0.3em;
+  line-height: 0.1em;
+}
+
+blockquote:after {
+  content: "\201D";
+  font-size: 2.0em;
+  position:absolute;
+  right: 3px;
+  bottom: 0em;
+  line-height: 0.1em;
+}
+blockquote p {
+  display: inline;
 }
 
 /* Large desktop */
