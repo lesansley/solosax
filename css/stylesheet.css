@@ -42,13 +42,11 @@ nav ul {
 }
 
 span {
-  display: inline-block;
   line-height: normal;
   text-align: -webkit-center;
-  font-size: 13vw;
-  color: rgba(236,170,57,0.6);
+  font-size: 3em;
+  color: rgb(254,219,117);
   font-weight: 900;
-  font-family: 'Playfair Display SC Black';
 }
 
 main {
@@ -80,7 +78,7 @@ main {
 
 .nav-item {
   font-weight: 400;
-  font-size: larger;
+  font-size: 1em;
 }
 
 .content {
@@ -95,27 +93,32 @@ main {
 }
 
 .section-1 {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
-.section-2 {
-  background-color: #6939ec;
-}
-
-.section-4 {
-  background-color: #e239aa;
-}
-
-.section-6 {
-  background-color: #aae239;
+.listen-btn {
+  border-radius: 20px;
+  box-shadow: 3px 5px 2px #888888;
+  background: -webkit-linear-gradient(rgb(254,219,117), rgb(236, 170, 57)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(254,219,117), rgb(236, 170, 57)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(254,219,117), rgb(236, 170, 57)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(254,219,117), rgb(236, 170, 57)); /* Standard syntax */
+  color: white;
 }
 
 .quote {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 3vw;
+  background-color: rgb(254,219,117);
+  background-color: white;
+
+  color:  rgb(236, 170, 57);
 }
 
+.section-4 {
+  background-color: rgb(254,219,117);
+}
 .logo-img {
   max-height: 100px;
   visibility: hidden;
@@ -123,6 +126,7 @@ main {
 
 .logo-wrapper {
   padding: 0;
+  display: none;
 }
 
 .banner-img {
@@ -139,13 +143,18 @@ main {
   left: 0;
 }
 
-.title-wrapper {
+.title-text {
+  visibility: hidden;
+}
+
+.header-title > * {
+  vertical-align: middle;
+}
+
+.header-title {
   text-align: center;
 }
 
-.title-wrapper > * {
-  vertical-align: middle;
-}
 
 blockquote {
   padding: 0 1em 0 1em;
@@ -154,7 +163,6 @@ blockquote {
   line-height: 1.2em;
   border-left: 0;
   margin: 0;
-  color: white;
 }
 
 blockquote:before {
