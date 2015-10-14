@@ -145,6 +145,7 @@ main {
 
 .title-text {
   visibility: hidden;
+  font-size: 4vw;
 }
 
 .header-title > * {
