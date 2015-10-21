@@ -6,4 +6,4 @@ To view the website click on `index.html`
 
 ## Resources and attributions
 * Parallex code: http://codepen.io/JTParrett/pen/BkDie (I didn't use this in the end but it did make me think about flow)
-* Quotes: https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ (I like this a lot as it gets away from the boring numbering)
+* Quotes: https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
