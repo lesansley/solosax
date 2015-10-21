@@ -18,6 +18,19 @@
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 
+/* latin */
+@font-face {
+  font-family: 'Petit Formal Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Petit Formal Script'), local('PetitFormalScript-Regular'), url(https://fonts.gstatic.com/s/petitformalscript/v4/OEZwr2-ovBsq2n3ACCKoEj_nDggUN4qS50FV_sYRSL8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+  font-family: 'Playfair Display SC';
+}
+
 .flex-box {
   display: -webkit-flex;
   display: -moz-flex;
@@ -109,10 +122,10 @@ main {
 .quote {
   padding-top: 40px;
   padding-bottom: 40px;
-  font-size: 3vw;
+  font-family: 'Petit Formal Script';
+  font-size: 1.8vw;
   background-color: rgb(254,219,117);
   background-color: white;
-
   color:  rgb(236, 170, 57);
 }
 
@@ -126,7 +139,7 @@ main {
 
 .logo-wrapper {
   padding: 0;
-  display: none;
+  display: none;  
 }
 
 .banner-img {
@@ -156,11 +169,10 @@ main {
   text-align: center;
 }
 
-
 blockquote {
   padding: 0 1em 0 1em;
   position:relative;
-  font-size: 1.4em;
+  font-size: 2.4vw;
   line-height: 1.2em;
   border-left: 0;
   margin: 0;
@@ -168,21 +180,16 @@ blockquote {
 
 blockquote:before {
   content: "\201C";
-  font-size: 2.0em;
-  position:absolute;
-  left: 3px;
+  font-size: 2.4vw;
   top: 0.3em;
   line-height: 0.1em;
 }
 
 blockquote:after {
   content: "\201D";
-  font-size: 2.0em;
-  position:absolute;
-  right: 3px;
-  bottom: 0em;
-  line-height: 0.1em;
+  font-size: 2.4vw;
 }
+
 blockquote p {
   display: inline;
 }
@@ -194,7 +201,7 @@ blockquote p {
 
 /* Desktop */
 @media only screen and (max-width: 992px) {
-
+  
 }
 
 /* Tablets */
@@ -209,7 +216,7 @@ blockquote p {
   }
 
   .title-wrapper {
-    display: none;
+    display: flex;
   }
 
   .nav-list {
